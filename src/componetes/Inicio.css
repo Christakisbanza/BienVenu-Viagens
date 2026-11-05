@@ -1,0 +1,66 @@
+#containerInicio{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+#containerInicio form{
+    background-color: #F3F7FA;
+    border-radius: 5px;
+    border: 2px solid #247BA0;
+    padding: 20px;
+    height: 500px;
+}
+form h1{
+    text-align: center;
+}
+#imgAviao img{
+    width: 768px;
+    height: 512px;
+
+}
+.campoDePreechimento{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.campoDePreechimento input{
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+.campoTxt{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.campoTxt textarea{
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+#btnForm{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #2563eb;
+
+    transform-origin: left;
+    z-index: 9999;
+}
