@@ -50,6 +50,13 @@ form h1{
     cursor: pointer;
     transition: 0.3s;
     font-weight: bold;
+    background-color: #F4A261;
+    border: 2px solid #247BA0;
+    border-radius: 5px;
+}
+#btnForm:hover{
+    color: #247BA0;
+    border: 2px solid black;
 }
 .progress-bar {
     position: fixed;
