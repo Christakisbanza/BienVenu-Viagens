@@ -5,7 +5,7 @@ import { useState } from "react";
 import AviaoImg from '../imgs/Aviao.png'
 import BtnWhats from '../animations/BtnWhats';
 import BarraProgreso from '../animations/BarraProgreso';
-
+import CardAnim from '../animations/CardAnim';
 
 
 const Inicio = () => {
@@ -37,8 +37,20 @@ const Inicio = () => {
         <div id='containerInicio'>
             <BarraProgreso/>
             <BtnWhats/>
-            <div id='imgAviao'>
+            <div id='imgAviao' className="floating-section">
                 <img src={AviaoImg} alt="imagem de avião" />
+                <CardAnim startX={0} startY={50} delay={0}>
+                    <h3>Passagens Aérias Pro Mundo Inteiro</h3>
+                    <p>Experiências únicas. Garanta já o seu</p>
+                </CardAnim>
+                <CardAnim startX={0} startY={200} delay={3}>
+                    <h3>Guia de Turismo</h3>
+                    <p>Entre em contato para mais informações </p>
+                </CardAnim>
+                <CardAnim startX={0} startY={350} delay={6}>
+                    <h3>A Procura de um Intercâmbio ?</h3>
+                    <p>Preencha o formulário ao lado !</p>
+                </CardAnim>
             </div>
             <form onSubmit={handleSubmit}>
                 <h1>Preencha o formulário e em breve entraremos em contato</h1>
