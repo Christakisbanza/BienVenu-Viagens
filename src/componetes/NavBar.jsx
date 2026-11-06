@@ -23,7 +23,9 @@ const NavBar = () => {
                     <li>Serviços</li>
                 </ul>
                 <div>
-                    <button id='btnNavBar'> Agende sua viagem</button>
+                    <a href="https://wa.me/5541995980859?text=Olá!%20Gostaria%20de%20mais%20informações." target="_blank">
+                        <button id='btnNavBar'> Agende sua viagem</button>
+                    </a>
                 </div>
             </div>
         

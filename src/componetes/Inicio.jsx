@@ -1,7 +1,10 @@
 import React from 'react'
 import './Inicio.css'
 import { useState } from "react";
+
 import AviaoImg from '../imgs/Aviao.png'
+import WhatsImg from '../imgs/WhatsApp_icon.png'
+
 import { motion, useScroll, useSpring } from "motion/react";
 
 
@@ -42,6 +45,11 @@ const Inicio = () => {
                 className="progress-bar"
                 style={{ scaleX }}
             />
+            <div id='imgWhats'>
+                <a href="https://wa.me/5541995980859?text=Olá!%20Gostaria%20de%20mais%20informações." target="_blank">
+                    <img src={WhatsImg} alt="Imagem do whatsapp" />
+                </a>
+            </div>
             <div id='imgAviao'>
                 <img src={AviaoImg} alt="imagem de avião" />
             </div>
