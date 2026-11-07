@@ -8,7 +8,6 @@
     border-radius: 5px;
     border: 2px solid #247BA0;
     padding: 20px;
-    height: 500px;
 }
 form h1{
     text-align: center;
@@ -17,8 +16,6 @@ form h1{
     position: relative;
 }
 #imgAviao img{
-    width: 768px;
-    height: 512px;
     position: absolute;
 }
 .campoDePreechimento{
@@ -65,4 +62,12 @@ form h1{
     position: relative;
     width: 100%;
     height: 500px;
+}
+
+
+@media (max-width: 768px){
+    #containerInicio{
+        display: block;
+        width: 100%;
+    }
 }

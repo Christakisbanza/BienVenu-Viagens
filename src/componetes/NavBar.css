@@ -42,3 +42,10 @@ li:hover {
 #btnNavBar:hover{
     color: #247BA0;
 }
+
+@media (max-width: 768px){
+    #navBarContainer{
+        width: 100%;
+        margin: 0px;
+    }
+}
