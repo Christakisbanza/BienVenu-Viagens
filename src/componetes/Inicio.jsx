@@ -64,12 +64,12 @@ const Inicio = () => {
                     />
                 </div>
                 <div className='campoDePreechimento'>
-                    <label>Email</label>
+                    <label>E-mail</label>
                     <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Digite seu email"
+                    placeholder="Digite seu e-mail"
                     />
                 </div>
                 <div className="campoTxt">
