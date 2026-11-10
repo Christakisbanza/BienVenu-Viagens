@@ -77,7 +77,6 @@ form h1{
 @media (max-width: 768px){
     #containerInicio{
         display: block;
-        margin-top: 0;
     }
     #imgAviao{
         overflow: hidden;
@@ -118,5 +117,13 @@ form h1{
     }
     form h1{
         font-size: 20px;
+    }
+}
+@media (min-width: 390px){
+    #containerInicio{
+        margin-top: 80px;
+    }
+    #imgAviao img{
+        margin-bottom: 50px;
     }
 }
