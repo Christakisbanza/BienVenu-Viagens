@@ -13,7 +13,12 @@ form h1{
     text-align: center;
 }
 #imgAviao{
+    display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
 }
 #imgAviao img{
     position: absolute;
@@ -64,10 +69,54 @@ form h1{
     height: 500px;
 }
 
-
+@media(max-width: 1050px){
+    #containerInicio{
+        display: block;
+    }
+}
 @media (max-width: 768px){
     #containerInicio{
         display: block;
-        width: 100%;
+        margin-top: 0;
+    }
+    #imgAviao{
+        overflow: hidden;
+    }
+    #imgAviao img{
+        height: 400px;
+        min-width: 650px;
+    }
+    #imgAviao h3{
+        font-size: 15px;
+    }
+    #imgAviao p{
+        font-size: 13px;
+    }
+    form h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 590px){
+    #imgAviao img{
+        height: 380px;
+        min-width: 500px;
+    }
+    form h1{
+        font-size: 22px;
+    }
+}
+@media (max-width: 400px){
+    #imgAviao img{
+        height: 300px;
+        min-width: 400px;
+    }
+    #imgAviao h3{
+        font-size: 13px;
+    }
+    #imgAviao p{
+        font-size: 11px;
+    }
+    form h1{
+        font-size: 20px;
     }
 }

@@ -9,6 +9,7 @@
 }
 #logoNavBar{
     display: flex;
+    align-items: center;
 }
 #logoNavBar h1{
     font-size: 22px;
@@ -43,9 +44,29 @@ li:hover {
     color: #247BA0;
 }
 
+
+@media (max-width: 1050px){
+    #navBarContainer ul{
+        display: none;
+    }
+}
 @media (max-width: 768px){
     #navBarContainer{
-        width: 100%;
-        margin: 0px;
+        margin: 25px;
+    }
+    #logoNavBar h1{
+        font-size: 18px;
+    }
+    #navBarContainer ul{
+        display: none;
+    }
+}
+@media (max-width: 415px){
+    #logoNavBar h1{
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    #btnNavBar{
+        width: 100px;
     }
 }

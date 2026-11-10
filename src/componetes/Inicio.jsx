@@ -39,15 +39,15 @@ const Inicio = () => {
             <BtnWhats/>
             <div id='imgAviao' className="floating-section">
                 <img src={AviaoImg} alt="imagem de avião" />
-                <CardAnim startX={0} startY={50} delay={0}>
+                <CardAnim startX={-100} startY={-150} delay={0}>
                     <h3>Passagens Aérias Pro Mundo Inteiro</h3>
                     <p>Experiências únicas. Garanta já o seu</p>
                 </CardAnim>
-                <CardAnim startX={0} startY={200} delay={3}>
+                <CardAnim startX={-100} startY={0} delay={3}>
                     <h3>Guia de Turismo</h3>
                     <p>Entre em contato para mais informações </p>
                 </CardAnim>
-                <CardAnim startX={0} startY={350} delay={6}>
+                <CardAnim startX={-100} startY={150} delay={6}>
                     <h3>A Procura de um Intercâmbio ?</h3>
                     <p>Preencha o formulário ao lado !</p>
                 </CardAnim>

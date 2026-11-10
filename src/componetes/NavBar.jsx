@@ -13,9 +13,9 @@ const NavBar = () => {
         <>
             <div id='navBarContainer'>
                 <div id='logoNavBar'>
-                    <PlaneTakeoff size={30}/>
-                    <Luggage size={30}/>
-                    <h1>BienVenu Travel&Tours</h1>
+                    <PlaneTakeoff/>
+                    <Luggage />
+                    <h1>JeanneTravel</h1>
                 </div>
                 <ul>
                     <li>Inicio</li>
