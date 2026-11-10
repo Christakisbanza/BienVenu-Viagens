@@ -1,7 +1,7 @@
 #containerInicio{
     display: flex;
     justify-content: space-around;
-    margin: 50px;
+    margin: 80px 50px;
 }
 #containerInicio form{
     background-color: #F3F7FA;
