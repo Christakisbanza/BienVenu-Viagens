@@ -40,7 +40,7 @@ const Inicio = () => {
             <div id='imgAviao' className="floating-section">
                 <img src={AviaoImg} alt="imagem de avião" />
                 <CardAnim startX={-100} startY={-150} delay={0}>
-                    <h3>Passagens Aérias Pro Mundo Inteiro</h3>
+                    <h3>Passagens Aérias Para o Mundo Inteiro</h3>
                     <p>Experiências únicas. Garanta já o seu</p>
                 </CardAnim>
                 <CardAnim startX={-100} startY={0} delay={3}>

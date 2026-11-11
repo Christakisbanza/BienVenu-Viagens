@@ -3,6 +3,7 @@ import './App.css'
 
 import NavBar from './componetes/NavBar'
 import Inicio from './componetes/Inicio'
+import Sobre from './componetes/Sobre'
 function App() {
   
 
@@ -13,6 +14,9 @@ function App() {
       </div>
       <div>
         <Inicio/>
+      </div>
+      <div>
+        <Sobre/>
       </div>
     </>
   )
