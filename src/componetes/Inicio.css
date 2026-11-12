@@ -1,7 +1,8 @@
 #containerInicio{
     display: flex;
     justify-content: space-around;
-    margin: 80px 0px;
+    margin: 150px 0px;
+    scroll-margin-top: 200px;
 }
 #containerInicio form{
     background-color: #F3F7FA;
@@ -82,7 +83,7 @@ form h1{
 @media (max-width: 768px){
     #containerInicio{
         display: block;
-        margin-top: 100px;
+        margin-top: 150px;
     }
     #imgAviao{
         overflow: hidden;
@@ -130,7 +131,7 @@ form h1{
 }
 @media (max-width: 376px){
     #containerInicio{
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
 }

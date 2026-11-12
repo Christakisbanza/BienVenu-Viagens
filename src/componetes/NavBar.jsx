@@ -18,9 +18,17 @@ const NavBar = () => {
                     <h1>JeanneTravel</h1>
                 </div>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Sobre</li>
-                    <li>Serviços</li>
+                    <li>
+                        <a href="#containerInicio">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="#containerSobre">Sobre</a>
+                    </li>
+
+                    <li>
+                        <a href="#servicos">Serviços</a>
+                    </li>
                 </ul>
                 <div>
                     <a href="https://wa.me/5541995980859?text=Olá!%20Gostaria%20de%20mais%20informações." target="_blank">

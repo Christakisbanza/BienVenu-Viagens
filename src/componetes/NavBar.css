@@ -4,6 +4,10 @@
     justify-content: space-between;
     background-color: #F3F7FA;
     border-bottom: 2px solid #247BA0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
 }
 #logoNavBar{
     display: flex;
@@ -19,14 +23,17 @@ ul {
     gap: 50px;
     list-style: none;
 }
-li {
+li a{
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
     color: #64748b;
+    text-decoration: none;
 }
-li:hover {
+a:hover {
     color: #247BA0;
+    transition: 0.3s ease;
+    text-decoration: underline;
 }
 #btnNavBar{
     border-radius: 5px;
