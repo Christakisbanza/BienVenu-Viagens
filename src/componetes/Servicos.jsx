@@ -236,7 +236,7 @@ const Servicos = () => {
                                             className="servico-link"
                                             onClick={() =>
                                                 window.open(
-                                                'https://wa.me/SEUNUMERO',
+                                                'https://wa.me/5541995980859?text=Olá!%20Gostaria%20de%20mais%20informações.',
                                                 '_blank'
                                                 )
                                             }

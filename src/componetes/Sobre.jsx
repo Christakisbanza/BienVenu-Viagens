@@ -26,7 +26,7 @@ const Sobre = () => {
                     Sua próxima aventura começa aqui.
                 </h2>
 
-                <p className='txt'>A BienVenu Travel nasceu em 2026 com um propósito: tornar o mundo mais acessível e ajudar pessoas a transformarem seus planos de viagem em experiências inesquecíveis.</p>
+                <p className='txt'>A JeanneTravel nasceu em 2026 com um propósito: tornar o mundo mais acessível e ajudar pessoas a transformarem seus planos de viagem em experiências inesquecíveis.</p>
 
                 <p className='txt'>Atuamos oferecendo soluções completas para quem deseja explorar novos destinos, seja por lazer, estudos ou novas oportunidades. Trabalhamos com compra de passagens aéreas, pacotes turísticos, seguros de viagem, intercâmbios e assessoria para concessão de vistos, reunindo em um só lugar tudo o que você precisa para planejar sua próxima jornada.</p>
 
