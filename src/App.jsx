@@ -4,6 +4,8 @@ import './App.css'
 import NavBar from './componetes/NavBar'
 import Inicio from './componetes/Inicio'
 import Sobre from './componetes/Sobre'
+import Servicos from './componetes/Servicos'
+
 function App() {
   
 
@@ -17,6 +19,9 @@ function App() {
       </div>
       <div>
         <Sobre/>
+      </div>
+      <div>
+        <Servicos/>
       </div>
     </>
   )

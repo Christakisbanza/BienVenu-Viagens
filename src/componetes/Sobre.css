@@ -1,33 +1,33 @@
 #containerSobre{
     background-color: #F3F7FA;
-    border-radius: 5px;
-    border: 2px solid #247BA0;
     padding: 20px;
-    margin: 200px 50px;
+    margin: 200px 0px;
     position: relative;
 }
 #imgsSobre{
     position: absolute;
-    top: -100px;
-    left: -50px;
+    top: -50px;
+    left: 15px;
 }
 #imgs2Sobre{
     position: absolute;
-    right: -15px;
-    bottom: -80px;
+    right: 15px;
+    bottom: -40px;
 }
 #imgsSobre img{
-    width: 300px;
+    width: 200px;
 }
 #imgs2Sobre img{
-    width: 300px;
+    width: 200px;
 }
 #containerSobre h1{
     text-align: center;
+    color: #102a43;
 }
 #containerSobre h2{
     margin: 20px 0px;
     text-align: justify;
+    color: #247ba0;;
 }
 .txt{
     margin-bottom: 15px;
@@ -59,18 +59,18 @@
 }
 @media(max-width: 770px){
     #imgsSobre img{
-        width: 180px;
+        width: 150px;
     }
     #imgs2Sobre img{
-        width: 180px;
+        width: 150px;
     }
 
     #imgsSobre{
-        top: -60px;
-        left: -50px;
+        top: -40px;
+        left: 0px;
     }
     #imgs2Sobre{
-        right: -50px;
-        bottom: -50px;
+        right: 10px;
+        bottom: -40px;
     }
 }

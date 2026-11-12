@@ -1,0 +1,250 @@
+
+.servicos-section {
+    width: 100%;
+    padding: 100px 6%;
+    background: #f5f8fb;
+    overflow: hidden;
+}
+
+.servicos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CABEÇALHO */
+
+.servicos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.servicos-label {
+    color: #247ba0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.servicos-titulo h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    color: #102a43;
+    margin: 15px 0;
+}
+
+.servicos-titulo h2 span {
+    color: #247ba0;
+}
+
+.servicos-titulo p {
+    max-width: 500px;
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* CONTROLES */
+
+.servicos-controles {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.servicos-btn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #d5e1e9;
+    border-radius: 50%;
+    background: white;
+    color: #102a43;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.servicos-btn:hover {
+    background: #247ba0;
+    color: white;
+    border-color: #247ba0;
+    transform: translateY(-3px);
+}
+
+/* CARROSSEL */
+
+.servicos-viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.servicos-track {
+    display: flex;
+    gap: 24px;
+    will-change: transform;
+}
+
+/* CARDS */
+
+.servico-card {
+    flex: 0 0 auto;
+    min-height: 310px;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e5edf3;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 25px rgba(16, 42, 67, 0.04);
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.servico-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(16, 42, 67, 0.10);
+}
+
+/* TOPO DOS CARDS */
+
+.servico-card-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servico-numero {
+    font-size: 14px;
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+.servico-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 15px;
+    background: #eaf5fa;
+    color: #247ba0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTEÚDO DOS CARDS */
+
+.servico-card-conteudo h3 {
+    color: #102a43;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.servico-card-conteudo p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 72px;
+}
+
+/* LINK */
+
+.servico-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #247ba0;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.servico-link:hover {
+    gap: 13px;
+}
+
+/* INDICADORES */
+
+.servicos-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.servicos-indicadores {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.servico-indicador {
+    width: 9px;
+    height: 9px;
+    border: none;
+    border-radius: 20px;
+    background: #cbd5e1;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.servico-indicador.ativo {
+    width: 30px;
+    background: #247ba0;
+}
+
+.servicos-contagem {
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .servicos-section {
+        padding: 80px 5%;
+    }
+
+    .servico-card {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .servicos-section {
+        padding: 65px 20px;
+    }
+
+    .servicos-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .servicos-titulo h2 {
+        font-size: 34px;
+    }
+
+    .servicos-titulo p {
+        font-size: 14px;
+    }
+
+    .servicos-controles {
+        align-self: flex-end;
+    }
+
+    .servico-card {
+        min-height: 290px;
+        padding: 25px;
+    }
+}
