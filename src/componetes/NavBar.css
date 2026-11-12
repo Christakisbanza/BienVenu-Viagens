@@ -1,10 +1,8 @@
 #navBarContainer{
     display: flex;
-    margin-top: 50px;
     padding: 20px;
     justify-content: space-between;
     background-color: #F3F7FA;
-    border-top: 2px solid #247BA0;
     border-bottom: 2px solid #247BA0;
 }
 #logoNavBar{
@@ -53,7 +51,7 @@ li:hover {
 }
 @media (max-width: 768px){
     #navBarContainer{
-        margin: 25px 0px;
+        margin-bottom: 25px;
     }
     #logoNavBar h1{
         font-size: 18px;
