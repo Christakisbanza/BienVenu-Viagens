@@ -12,7 +12,11 @@ import {
     ArrowLeft,
     ArrowRight,
     ArrowUpRight,
-    Divide
+    Divide,
+    Hotel,
+    Car,
+    Ship,
+    Languages
 } from 'lucide-react'
 
 const servicos = [
@@ -55,7 +59,48 @@ const servicos = [
         'Conte com orientação e suporte durante as etapas de solicitação do seu visto.',
         icon: FileCheck,
         numero: '05'
+    },
+    {
+        id: 6,
+        titulo: 'Hoteis',
+        descricao:
+        'Descubra o melhor do lazer e descanso com tarifas exclusivas.',
+        icon: Hotel,
+        numero: '06'
+    },
+    {
+        id: 7,
+        titulo: 'Transfer Privativo',
+        descricao:
+        'Conforto e espaço. Veículos modernos com porta-malas amplo para todas as suas bagagens.',
+        icon: Car,
+        numero: '07'
+    },
+    {
+        id: 8,
+        titulo: 'Cruzeiro/Trem',
+        descricao:
+        'Criamos roteiros personalizados com conforto, segurança e suporte completo do início ao fim da sua viagem.',
+        icon: Ship,
+        numero: '08'
+    },
+    {
+        id: 9,
+        titulo: 'Tradutor',
+        descricao:
+        'Tradução Técnica e Corporativa - Contratos, manuais, apresentações, relatórios e documentos empresariais traduzidos com terminologia exata e sigilo absoluto.',
+        icon: Languages,
+        numero: '09'
+    },
+    {
+        id: 10,
+        titulo: 'Locação de Veículos',
+        descricao:
+        'Sedans e SUVs - Mais espaço, conforto e tecnologia para viagens em família, trajetos longos ou compromissos executivos com máxima segurança.',
+        icon: Car,
+        numero: '10'
     }
+    
 ]
 
 
