@@ -1,5 +1,7 @@
 import React from 'react'
 import './Inicio.css'
+
+import emailjs from '@emailjs/browser';
 import { useState } from "react";
 
 import AviaoImg from '../imgs/Aviao.png'
@@ -10,27 +12,63 @@ import CardAnim from '../animations/CardAnim';
 
 const Inicio = () => {
 
-    const [nome, setNome] = useState("");
-    const [email, setEmail] = useState("");
-    const [msg, setMsg] = useState("");
+    const [formData, setFormData] = useState({
+        nome: '',
+        email: '',
+        mensagem: ''
+    });
 
-    
+    const [enviando, setEnviando] = useState(false);
 
-    function handleSubmit(event) {
-        event.preventDefault();
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
 
-        if (!nome || !email) {
-            alert("Preencha todos os campos!");
-        return;
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+
+        if (
+            !formData.nome.trim() ||
+            !formData.email.trim() ||
+            !formData.mensagem.trim()
+        ) {
+            alert('Por favor, preencha todos os campos!');
+            return;
         }
 
-        alert("Nome:" + nome);
-        alert("Email:" + email);
-        alert("Msg:" + msg);
+        setEnviando(true);
 
-        setNome("")
-        setEmail("")
-        setMsg("")
+        try {
+            await emailjs.send(
+                'service_muh4fe8',
+                'template_3lg6tye',
+                {
+                    name: formData.nome,
+                    email: formData.email,
+                    message: formData.mensagem
+                },
+                'hmEx8dsPJOBGUxCmE'
+            );
+
+            alert('Mensagem enviada com sucesso!');
+
+            setFormData({
+            nome: '',
+            email: '',
+            mensagem: ''
+            });
+
+        } catch (error) {
+            console.error('Erro ao enviar:', error);
+            alert('Não foi possível enviar sua mensagem.');
+
+        } finally {
+            setEnviando(false);
+        }
+
     }
 
     return (
@@ -57,33 +95,39 @@ const Inicio = () => {
                 <div className='campoDePreechimento'>
                     <label>Nome</label>
                     <input
+                    name="nome"
                     type="text"
-                    value={nome}
-                    onChange={(e) => setNome(e.target.value)}
+                    value={formData.nome}
+                    onChange={handleChange}
                     placeholder="Digite seu nome"
+                    required
                     />
                 </div>
                 <div className='campoDePreechimento'>
                     <label>E-mail</label>
                     <input
+                    name="email"
                     type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="Digite seu e-mail"
+                    required
                     />
                 </div>
                 <div className="campoTxt">
                     <label>Mensagem</label>
                     <textarea
+                        name="mensagem"
                         placeholder="Digite sua mensagem..."
                         rows="5"
-                        value={msg}
-                        onChange={(e) => setMsg(e.target.value)}
+                        value={formData.mensagem}
+                        onChange={handleChange}
+                        required
                     />
                 </div>
                 
-                <button type="submit" id='btnForm'>
-                    Enviar
+                <button type="submit" id='btnForm' disabled={enviando}>
+                    {enviando ? 'Enviando...' : 'Enviar mensagem'}
                 </button>
             </form>
         </div>
